@@ -3,54 +3,60 @@ Grunt Basic
 
 Basic boilerplate/starter app with grunt tools for JS checking, LESS CSS compilation and others.
 
-## Dependencies
-
-
 ## Project Setup
 
-1. _What dependencies does it have (where are they expressed) and how do I install them?_
-2. _How can I see the project working before I change anything?_
+1. Use the Node Packager Manager (NPM) install command within the root directory of _gruntBasic_. This will install all the dependencies and packages that will be needed for the app.
 
-## Testing
+## Automated Tasks
 
-_How do I run the project's automated tests?_
+There are automated tasks to carry out repetitive operations. The plugins carrying out these tasks are:
 
-### Unit Tests
+- **JSHint**: JavaScript error checking.
+- **Concat**: Concatenating JavaScript files.
+- **Uglify**: Obfuscating and minifying JavaScript files.
+- **LESS**:   Compiling LESS CSS files.
+- **CSSMin**: Concatenating and minifying JavaScript files.
+- **Watch**:  Watching for file changes and carrying out operations based on the changed file.
 
-1. `rake spec`
+### Running Tasks
 
-### Integration Tests
+You can run these tasks by using the `grunt` command followed by the task name e.g.
 
-1. _Run other local services / provide credentials for external services._
-2. `rake spec:integration`
+`grunt jshint`
 
-## Deploying
+### Watch Task
 
-### _How to setup the deployment environment_
+We use the watch task to check for changes to less files so that the LESS is compiled to CSS and saved to a new file. The watch task is not used in any of the defined task cases.
 
-- _Required heroku addons, packages, or chef recipes._
-- _Required environment variables or credentials not included in git._
-- _Monitoring services and logging._
+### Default Tasks Case
 
-### _How to deploy_
+If you use the `grunt` command without specifying a task, grunt will use the default task. This is currently set to run all of the tasks listed above with the exception of the watch command.
 
-## Troubleshooting & Useful Tools
+### Development Tasks Case
 
-_Examples of common tasks_
+When developing we really only want to see the changes to our code and to check for errors. 
 
-> e.g.
-> 
-> - How to make curl requests while authenticated via oauth.
-> - How to monitor background jobs.
-> - How to run the app through a proxy.
+The tasks used within this case are:
 
-## Contributing changes
+- JSHint
+- Concat
+- LESS
+- CSSMin
 
-- _Internal git workflow_
-- _Pull request guidelines_
-- _Tracker project_
-- _Google group_
-- _irc channel_
-- _"Please open github issues"_
+We call the JSHint task for error/syntax checking, Concat to concatenate all our JavaScript into one file, LESS to compile our CSS and CSSMin to concatenate all our CSS into one file.
+
+### Production Tasks Case
+
+When getting our files ready for production we don't need to check for errors (as the development task case should have been run previous to this) we simply want to compile our files and concatenate our JavaScript and CSS.  
+
+The tasks used within this case are:
+
+- Concat
+- Uglify
+- LESS
+- CSSMin
+
+We use Concat to concatenate all our JavaScript into one file, LESS to compile our CSS and CSSMin to concatenate all our CSS into one file.
 
 ## License
+MIT
