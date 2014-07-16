@@ -48,7 +48,7 @@ app = {
             // END switch.
 
             // Log the message.
-            console.log('%c '+ message +' ', style);
+            console.log('%c '+ message +' ', style);;
         }
         // END if console.log.
     }    
