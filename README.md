@@ -5,7 +5,7 @@ Basic boilerplate/starter app with grunt tools for JS checking, LESS CSS compila
 
 ## Project Setup
 
-1. Use the Node Packager Manager (NPM) install command within the root directory of _gruntBasic_. This will install all the dependencies and packages that will be needed for the app.
+1. Use the Node Packager Manager (NPM) install command `npm install` within the root directory of _gruntBasic_. This will install all the dependencies and packages that will be needed for the app.
 
 ## Automated Tasks
 
@@ -34,6 +34,8 @@ If you use the `grunt` command without specifying a task, grunt will use the def
 
 ### Development Tasks Case
 
+Use `grunt dev` to use this task case.
+
 When developing we really only want to see the changes to our code and to check for errors. 
 
 The tasks used within this case are:
@@ -46,6 +48,8 @@ The tasks used within this case are:
 We call the JSHint task for error/syntax checking, Concat to concatenate all our JavaScript into one file, LESS to compile our CSS and CSSMin to concatenate all our CSS into one file.
 
 ### Production Tasks Case
+
+Use `grunt prod` to use this task case.
 
 When getting our files ready for production we don't need to check for errors (as the development task case should have been run previous to this) we simply want to compile our files and concatenate our JavaScript and CSS.  
 
