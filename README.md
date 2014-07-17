@@ -1,4 +1,4 @@
-Grunt Basic
+Grunt Basic [![Build Status](https://travis-ci.org/bombadillo/gruntBasic.svg?branch=master)](https://travis-ci.org/bombadillo/gruntBasic)
 ==========
 
 Basic boilerplate/starter app with grunt tools for JS checking, LESS CSS compilation and others.
@@ -51,7 +51,7 @@ We call the JSHint task for error/syntax checking, Concat to concatenate all our
 
 Use `grunt prod` to use this task case.
 
-When getting our files ready for production we don't need to check for errors (as the development task case should have been run previous to this) we simply want to compile our files and concatenate our JavaScript and CSS.  
+When getting our files ready for production we want to check for errors, compile our LESS code, and concatenate our JavaScript and CSS.  
 
 The tasks used within this case are:
 
