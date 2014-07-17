@@ -96,5 +96,5 @@ module.exports = function(grunt) {
     // Development tasks.
 	grunt.registerTask('dev', ['jshint', 'less', 'cssmin']);
 	// Production tasks.
-	grunt.registerTask('prod', ['concat', 'uglify', 'less', 'cssmin']);    
+	grunt.registerTask('prod', ['jshint', 'concat', 'uglify', 'less', 'cssmin']);    
 }
