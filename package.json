@@ -1,5 +1,6 @@
 {
-  "name": "boilerplate",
+  "name": "gruntBasic",
+  "author": "Chris Mumford <mumfordnsons@gmail.com>",  
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -13,5 +14,12 @@
   },
   "scripts": {
     "test": "grunt prod"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bombadillo/gruntBasic"
+  },
+  "bugs": {
+    "url": "https://github.com/bombadillo/gruntBasic/issues"
+  }  
 }

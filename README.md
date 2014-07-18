@@ -55,12 +55,13 @@ When getting our files ready for production we want to check for errors, compile
 
 The tasks used within this case are:
 
+- JSHint
 - Concat
 - Uglify
 - LESS
 - CSSMin
 
-We use Concat to concatenate all our JavaScript into one file, LESS to compile our CSS and CSSMin to concatenate all our CSS into one file.
+We call the JSHint task for error/syntax checking, use Concat to concatenate all our JavaScript into one file, LESS to compile our CSS and CSSMin to concatenate all our CSS into one file.
 
 ## License
 MIT
